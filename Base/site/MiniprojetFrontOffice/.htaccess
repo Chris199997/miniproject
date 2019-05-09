@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^Accueil$ index.php?c=Welcome [L]
+
+RewriteRule ^Categorie/Produit-([^/]+)$ index.php?c=Produit&m=select_categorie&idCateg=$1 [L]
+
+RewriteRule ^Produit/details-([^/]+)$ index.php?c=Produit&m=select_produit&idProd=$1 [L]
